@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import {getFirestore} from '@firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBySDycyOUbqX9y9q5o13XWBDh7qJs4_Tg",
-  authDomain: "fir-tutorial-64216.firebaseapp.com",
-  projectId: "fir-tutorial-64216",
-  storageBucket: "fir-tutorial-64216.appspot.com",
-  messagingSenderId: "640565087258",
-  appId: "1:640565087258:web:3d58750f05b4c4668c15a3",
-  measurementId: "G-8KG1NM1XFR"
+  apiKey: process.env.APIKEY,
+  authDomain: process.env.AUTHDOMAIN,
+  projectId: process.env.PROJECTID,
+  storageBucket: process.env.STORAGEBUCKET,
+  messagingSenderId: process.env.SENDINGID,
+  appId: process.env.APPID,
+  measurementId: process.env.MEASURMENTID
 };
 
 
